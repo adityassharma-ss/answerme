@@ -20,6 +20,3 @@ Then, point your browser to http://localhost:3000 and start interacting with the
 
 Contributions
 This app is open source and contributions are welcome. Feel free to submit pull requests or open issues on the GitHub repo.
-
-Note
-This is a sample readme and it may not reflect your actual application, use and modify it according to your needs.
