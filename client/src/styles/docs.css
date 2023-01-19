@@ -1,0 +1,42 @@
+.documentation-container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  nav a:hover {
+    color: rgb(31, 69, 113);
+}
+
+section {
+margin-top: 50px;
+}
+
+h2 {
+margin-bottom: 20px;
+}
+
+#faq li {
+margin-top: 20px;
+}
+
+#faq p {
+margin-bottom: 5px;
+}
+  

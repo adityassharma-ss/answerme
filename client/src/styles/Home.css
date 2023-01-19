@@ -1,0 +1,54 @@
+.App {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px; /* Add this to add a margin-top of the same height as the navbar */
+    text-overflow: clip;
+    overflow: hidden;
+    overflow-y:inherit;
+  }
+  
+  
+  .header {
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .header p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  
+  .cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cta-section button {
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .cta-section button:hover {
+    background-color: rgba(47, 64, 86, 0.8);
+    color: aliceblue;
+  }
+  
