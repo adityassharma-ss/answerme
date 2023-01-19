@@ -33,10 +33,10 @@ const Headers = () => {
         <a href="/">Home</a>
         <a href="/client/src/components/About.jsx">About</a>
         <a href="/client/src/components/Documentation.jsx">Docs</a>
-        <a href="https://github.com/yourusername" className='i'>
+        <a href="https://github.com/adityassharma-ss/answerme" className='i'>
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="https://twitter.com/yourusername" className='i'>
+        <a href="https://twitter.com/aadityatwt" className='i'>
           <FontAwesomeIcon icon={faTwitter} />
         </a>
       </div>
