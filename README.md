@@ -8,6 +8,8 @@ Whether you're a developer looking to build the next generation of chatbots, or 
 
 So why wait? Try out this amazing app today and see the power of OpenAI for yourself!
 
+To run this webapp on your system you will need to generate an API key from beta.openai.com and then create a .env file in the root directory of the server side application.
+
 Features
 Real-time natural language processing using OpenAI APIs
 Intuitive React front-end for easy interaction
@@ -20,3 +22,5 @@ Then, point your browser to http://localhost:3000 and start interacting with the
 
 Contributions
 This app is open source and contributions are welcome. Feel free to submit pull requests or open issues on the GitHub repo.
+
+Dont Forget to ⭐ this repository.
