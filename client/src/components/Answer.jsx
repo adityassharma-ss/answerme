@@ -23,18 +23,19 @@ const Answer = () => {
   }
 
   return (
-    <div className="answer-container">
+    <div className="answer-container" >
         <div className="query-section">
             <form onSubmit={handleSubmit}>
                 <textarea 
                     placeholder="Enter your query here" 
                     className="query-textarea"
                     value={query}
+                    
                     onChange={e => setQuery(e.target.value)}
                 />
                 <div className="submit-clear-section">
-                    <button type="submit" className="submit-button">Submit</button>
-                    <button className="clear-button" onClick={handleClear}>Clear</button>
+                    <button type="submit" className="video-game-button" id='container'>Submit</button>
+                    <button className="video-game-button" onClick={handleClear}>Clear</button>
                 </div>
             </form>
         </div>
@@ -44,7 +45,7 @@ const Answer = () => {
             </div>
             <div className="conversation-bubble bot-bubble">
                 <p>{answer}</p>
-                <button className="clear-button2" onClick={() => setAnswer('')}>Clear</button>
+                <button className="video-game-button" onClick={() => setAnswer('')}>Clear</button>
             </div>
         </div>
     </div>
