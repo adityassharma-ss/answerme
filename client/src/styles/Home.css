@@ -1,5 +1,5 @@
 .App {
-    background-color: black;
+    background: #001524;
     color: rgb(255, 255, 255);
     text-align: center;
     min-height: 100vh;
@@ -7,22 +7,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 0px; /* Add this to add a margin-top of the same height as the navbar */
+    margin-top: 0px;
     text-overflow: clip;
     overflow: hidden;
     overflow-y:inherit;
   }
   
-  
+  html {
+    scroll-behavior: smooth;
+}
   .header {
     margin-bottom: 40px;
   }
   
-  .header h1 {
+  /* .header h1 {
     font-size: 48px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+  } */
   
   .header p {
     font-size: 18px;
@@ -36,19 +38,123 @@
     justify-content: center;
   }
   
-  .cta-section button {
+  /* .cta-section button {
     background-color: white;
     color: black;
     padding: 12px 24px;
     border-radius: 100px;
     font-size: 18px;
+    font-family: Poppins;
     font-weight: bold;
     cursor: pointer;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-  
+
   .cta-section button:hover {
     background-color: rgba(47, 64, 86, 0.8);
     color: aliceblue;
   }
-  
+  .cta-section a {
+    text-decoration: none;
+    font-family: Poppins;
+    color: black;
+  } */
+  .video-game-button {
+    width: 150px;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    color: #382b22;
+    padding: .5em .5em;
+    background: #d2eaf9; /* Change pink to blue */
+    border: 2px solid #7597b1; /* Change pink to blue */
+    border-radius: 0.75em;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.video-game-button::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f0f9e0; /* Change pink to blue */
+    border-radius: inherit;
+    -webkit-box-shadow: 0 0 0 2px #7597b1, 0 0.625em 0 0 #e2e3ff; /* Change pink to blue */
+    box-shadow: 0 0 0 2px #7597b1, 0 0.625em 0 0 #e2e3ff; /* Change pink to blue */
+    -webkit-transform: translate3d(0, 0.75em, -1em);
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+.video-game-button:hover {
+    background: #e2f9d6; /* Change pink to blue */
+}
+
+.video-game-button::before {
+    -webkit-box-shadow: 0 0 0 2px #7597b1, 0 0.5em 0 0 #e2e3ff; /* Change pink to blue */
+    box-shadow: 0 0 0 2px #7597b1, 0 0.5em 0 0 #333333;
+    -webkit-transform: translate3d(0, 0.5em, -1em);
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+.video-game-button:active {
+    background: #e2f9d6; /* Change pink to blue */
+    -webkit-transform: translate(0em, 0.75em);
+    transform: translate(0em, 0.75em);
+}
+
+.video-game-button:active::before {
+    -webkit-box-shadow: 0 0 0 2px #7597b1, 0 0 #e2e3ff; /* Change pink to blue */
+    box-shadow: 0 0 0 2px #7597b1, 0 0 #e2e3ff; /* Change pink to blue */
+    -webkit-transform: translate3d(0, 0, -1em);
+    transform: translate3d(0, 0, -1em);
+}
+
+.video-game-button:focus:not(:focus-visible) {
+    outline: 0;
+}
+.highlight {
+  font-weight: bold;
+  color: blue; /* Customize the color as desired */
+  text-decoration: none; /* Add underline for emphasis */
+  animation: highlightText 2s infinite alternate; /* Add animation for attention */
+}
+.tilt {
+  display: inline-block;
+  transform: rotate(-2deg); /* Adjust the degree of tilt as needed */
+}
+@keyframes highlightText {
+  0% {
+    color: rgb(123, 31, 162); /* Start with the chosen color */
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    color: rgb(103, 58, 183); /* Midway, change to a different color */
+    transform: scale(1.1) rotate(1deg);
+  }
+  50% {
+    color: rgb(103, 58, 183); /* Midway, change to a different color */
+    transform: scale(1.2) rotate(2deg);
+  }
+  75% {
+    color: rgb(244, 143, 177); /* Return to the original color */
+    transform: scale(1.1) rotate(1deg);
+  }
+  100% {
+    color: rgb(244, 143, 177); /* Return to the original color */
+    transform: scale(1) rotate(0deg);
+  }
+}
