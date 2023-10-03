@@ -1,4 +1,5 @@
 .answer-container {
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,4 +150,9 @@
     
     .clear-button2:active {
         transform: scale(0.9); /* slightly decrease button size on active */
+    }
+
+    .answer-container{
+        margin-top: 10%;
+      
     }

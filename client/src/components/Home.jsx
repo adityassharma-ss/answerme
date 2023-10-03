@@ -3,6 +3,7 @@ import '../styles/Home.css'
 import Headers from './Headers';
 import Footer from './Footer';
 import Answer from './Answer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const queryBoxRef = useRef(null);
@@ -19,7 +20,7 @@ const Home = () => {
 
             </div>
             <div className="cta-section">
-                <a href="Answer.jsx#container"><button onClick={handleClick} className='video-game-button'>Get Started</button></a>
+              <Link to="/answerme">  <a href="Answer.jsx#container"><button onClick={handleClick} className='video-game-button'>Get Started</button></a></Link>
                 
             </div>
             
