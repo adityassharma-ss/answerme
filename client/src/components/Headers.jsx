@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import '../styles/NavBar.css'
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
@@ -28,12 +28,12 @@ const Headers = () => {
 
   return (
     <div className={`header-navbar ${navbarClass}`}>
-      <div className="logo">AnswerMe</div>
+     <Link to="/"> <div className="logo">AnswerMe</div></Link>
       <div className="nav-links">
-        <a href="/">Home</a>
-        <a href="/client/src/components/About.jsx">About</a>
-        <a href="/client/src/components/Documentation.jsx">Docs</a>
-        <a href="https://github.com/adityassharma-ss/answerme" className='i'>
+      <Link to="/">  <a href="/">Home</a></Link>
+       <Link to="/about"> <a href="/client/src/components/About.jsx">About</a></Link>
+       <Link to="/docs"> <a href="/client/src/components/Documentation.jsx">Docs</a></Link>
+       <a href="https://github.com/adityassharma-ss/answerme" className='i'>
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a href="https://twitter.com/aadityatwt" className='i'>

@@ -67,3 +67,11 @@
     text-decoration: solid;
     text-decoration-color: #0c89d1;
   }
+
+  .logo{
+    text-decoration: none;
+   
+  }
+  .logo:hover{
+    text-decoration: none;
+  }
