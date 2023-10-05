@@ -1,4 +1,4 @@
-.documentation-container {
+/* .documentation-container {
     width: 80%;
     margin: 0 auto;
     font-family: Arial, sans-serif;
@@ -39,4 +39,85 @@ margin-top: 20px;
 #faq p {
 margin-bottom: 5px;
 }
-  
+   */
+
+.documentation-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 70%;
+}
+
+.documentation-container > h1 {
+  font-size: 5rem;
+}
+
+.getting-started,
+.features,
+.api-reference,
+.faq {
+  background-color: rgba(47, 64, 86, 0.8);
+  /* width: 100%; */
+  margin: 1rem;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+
+.getting-started > h2 {
+  font-size: 2.5rem;
+}
+
+.step-list,
+ul {
+  text-align: left;
+}
+
+.getting-started > ol {
+  margin: 1rem 2rem;
+}
+
+.getting-started > p,
+.features > p {
+  text-align: left;
+  margin: 2rem 2rem;
+}
+
+.accordion .item,
+.accordion .active {
+  width: 60%;
+  margin: 2rem auto;
+  border-radius: 5px;
+  padding: 0.1rem 1rem;
+  transition: all 0.5s ease-out;
+  box-shadow: 0 0 9px -2px #999999;
+}
+
+.accordion .item .head,
+.accordion .active .head {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.accordion .item .text,
+.accordion .active .text {
+  text-align: left;
+  margin: 1rem 1rem 3rem 1rem;
+}
+
+.accordion .active {
+  background-color: #001524;
+  box-shadow: none;
+}
+
+@media (max-width: 700px) {
+  .documentation-container {
+    width: 100%;
+  }
+  .accordion .item,
+  .accordion .active {
+    width: 90%;
+  }
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .App {
   text-align: center;
   color: black;
@@ -39,15 +39,15 @@
     transform: rotate(360deg);
   }
 }
-.magic-text{
-  font-family: 'Poppins';
+.magic-text {
+  font-family: "Poppins";
   font-size: 72px;
 }
-:root {  
+:root {
   --purple: rgb(123, 31, 162);
   --violet: rgb(103, 58, 183);
   --pink: rgb(244, 143, 177);
-  --yellow: #F1C93B;
+  --yellow: #f1c93b;
 
   /* --red: #F31559;
   --magenta: #FF52A2;
@@ -62,17 +62,18 @@
   from {
     background-position: 0% center;
   }
-  
+
   to {
     background-position: -200% center;
   }
 }
 
 @keyframes scale {
-  from, to {
+  from,
+  to {
     transform: scale(0);
   }
-  
+
   50% {
     transform: scale(1);
   }
@@ -82,7 +83,7 @@
   from {
     transform: rotate(0deg);
   }
-  
+
   to {
     transform: rotate(180deg);
   }
@@ -101,4 +102,3 @@ h1 > .magic > .magic-text {
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
 }
-
