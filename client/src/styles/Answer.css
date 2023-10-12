@@ -158,3 +158,13 @@ form {
 .clear-button2:active {
   transform: scale(0.9); /* slightly decrease button size on active */
 }
+
+@media (max-width: 750px) {
+  .answer-container {
+    width: 84%;
+    padding: 23% 8%;
+  }
+  .submit-clear-section {
+    margin: 20px;
+  }
+}
