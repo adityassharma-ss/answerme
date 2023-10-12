@@ -52,56 +52,67 @@ form {
   margin-top: 20px;
 }
 
-.submit-button {
-  width: 45%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+.btn-sumbit {
   border: none;
-  border-radius: 100px;
-  background-color: #f5fff5;
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-  font-weight: bold;
+  width: 15rem;
+  height: 6rem;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1c1a1c;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
 }
 
-.submit-button:hover {
-  width: 45%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 100px;
+.sparkle {
+  fill: #aaaaaa;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #aaaaaa;
+  font-size: medium;
+}
+
+.btn-sumbit:hover {
+  background: linear-gradient(0deg, #15445b, #001524);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 4px #15445b,
+    0px 0px 180px 0px #001524;
+  transform: translateY(-2px);
+}
+
+.btn-sumbit:hover .text {
+  color: white;
+}
+
+.btn-sumbit:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+
+.btn-clear {
+  border: 2px solid #15445b;
   background-color: #15445b;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  font-weight: bold;
+  border-radius: 0.9em;
+  padding: 1rem 3rem;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
 }
 
-.clear-button {
-  width: 45%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 100px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-  font-weight: bold;
+.btn-clear span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
 }
 
-.clear-button:hover {
-  width: 45%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 100px;
-  background-color: #15445b;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  font-weight: bold;
+.btn-clear:hover {
+  background-color: #001524;
 }
 
 .conversation-section {
